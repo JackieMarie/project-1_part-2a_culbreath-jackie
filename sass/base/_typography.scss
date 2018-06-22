@@ -2,38 +2,52 @@
 // This is where your base typography will go
 // ========================================
 
-h1 {
 
+h2, h3, h4, h5, h6 {
+  color: $darkgrey;
+}
+
+h1 {
+  @include font-type(Acumin Pro, italic, 500);
+  font-size: 54px;
 }
 
 h2 {
-
+  @include font-type(Acumin Pro, normal, 500);
+  font-size: 48px;
 }
 
 h3 {
-
+  @include font-type(Acumin Pro, normal, 500);
+  font-size: 36px;
 }
 
 h4 {
-
+  @include font-type(Acumin Pro, normal, 500);
+  font-size: 24px;
 }
 
 h5 {
-
+  @include font-type(Acumin Pro, normal, 700);
+  font-size: 14px;
 }
 
 h6 {
-
+  @include font-type(Acumin Pro, normal, 700);
+  font-size: 12px;
 }
 
 p {
-
+  @include font-type(Acumin Pro, normal, 300);
+  font-size: 20px;
 }
 
 a {
-
+  @include font-type(Acumin Pro Wide, normal, 500);
+  font-size: 16px;
+  color: $darkgrey;
 
   &:hover {
-
+  color: $green;
   }
 }

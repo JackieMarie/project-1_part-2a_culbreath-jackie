@@ -4,14 +4,16 @@
 .alert {
 
   &--error {
-    
+    @include alert($error, $white);
+    font-size: 12px;
   }
 
   &--success {
-
+    @include alert($success, $white);
   }
 
   &--notification {
-
+    @include alert($grey, $white);
+    opacity: 0.5;
   }
 }
