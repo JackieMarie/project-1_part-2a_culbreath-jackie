@@ -2,12 +2,15 @@
 // ===============================================
 
 // Font Families
-$primary-font: 'Nunito', sans-serif;
-$secondary-font: 'Bowlby One SC', cursive;
+$primary-font: 'Acumin Pro', sans-serif;
+$header-font: 'Acumin Pro', sans-serif;
+$link-font: 'Acumin Pro Wide', sans-serif;
+
 
 // Text Colors Map
 $type-colors: (
-  'black':     ( black ),
-  'blue':      ( blue  ),
-  'white':     ( white ),
+  'charcoal': ( charcoal ),
+  'white':    ( white ),
+  'grey':     ( grey ),
+  'dkblue':   ( dkblue ),
 );

@@ -1,13 +1,24 @@
-// Colors Variables Settings Stylesheet
+/// Colors Variables Settings Stylesheet
 // ========================================
 
-$black: black;
-$blue: blue;
-$green: green;
+$green: #2f9c03;
+$charcoal: #040f00;
+$yellow: #f1c400;
+$white: #fff;
+$dkblue: #003399;
+$grey: #4f574c;
+$error: #9c032f; // Error Red for Errors
+$success: #37b903; // Success Green for Alerts
+
 
 // Main Palette List
 $colors: (
-  black:    $black,
-  blue:     $blue,
-  green:    $green,
+'green': $green,
+'charcoal': $charcoal,
+'yellow': $yellow,
+'white': $white,
+'dkblue': $dkblue,
+'grey': $grey,
+'error': $error,
+'success': $success,
 );
