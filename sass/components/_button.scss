@@ -1,11 +1,18 @@
 // Button Component Stylesheet
 // ========================================
 .button {
+  width: 10%;
+  border-radius: 35px;
+  padding: $spacer-m;
 
   &--primary {
+    background-color: $white;
+    color: $green;
+    border: 2px solid $green;
 
     &:hover {
-
+      background-color: $green;
+      color: $white;
     }
   }
 

@@ -5,13 +5,10 @@
 
   &--error {
     @include alert($error, $white);
-    font-size: 12px;
   }
 
   &--success {
-    @include alert($success, $white);
-    @include font-type(Acumin Pro, normal, 200);
-    font-size: 14px;
+    @include alert($success, $darkgrey);
   }
 
   &--notification {

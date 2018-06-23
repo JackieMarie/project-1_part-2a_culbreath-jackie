@@ -7,7 +7,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @include font-type(Acumin Pro, bold, 500);
+  @include font-type(Acumin Pro, normal, 500);
   font-size: 54px;
 }
 
@@ -39,10 +39,6 @@ h6 {
 p {
   @include font-type(Acumin Pro, normal, 300);
   font-size: 20px;
-
-    &.alert {
-      font-size: 14x;
-    };
 }
 
 a {
@@ -55,7 +51,11 @@ a {
   }
 }
 
-.alert {
-  @include font-type(Acumin Pro, normal, 300);
-  font-size: 12px;
+.small {
+  @include font-type(Acumin Pro, normal, 200);
+  font-size: 14px;
+}
+
+.italic {
+  font-style: italic;
 }
