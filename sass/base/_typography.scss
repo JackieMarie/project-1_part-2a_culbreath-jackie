@@ -2,13 +2,12 @@
 // This is where your base typography will go
 // ========================================
 
-
 h2, h3, h4, h5, h6 {
   color: $darkgrey;
 }
 
 h1 {
-  @include font-type(Acumin Pro, italic, 500);
+  @include font-type(Acumin Pro, bold, 500);
   font-size: 54px;
 }
 
@@ -40,6 +39,10 @@ h6 {
 p {
   @include font-type(Acumin Pro, normal, 300);
   font-size: 20px;
+
+    &.alert {
+      font-size: 14x;
+    };
 }
 
 a {
@@ -50,4 +53,9 @@ a {
   &:hover {
   color: $green;
   }
+}
+
+.alert {
+  @include font-type(Acumin Pro, normal, 300);
+  font-size: 12px;
 }

@@ -10,10 +10,11 @@
 
   &--success {
     @include alert($success, $white);
+    @include font-type(Acumin Pro, normal, 200);
+    font-size: 14px;
   }
 
   &--notification {
-    @include alert($grey, $white);
-    opacity: 0.5;
+    @include alert($grey, $darkgrey);
   }
 }

@@ -2,7 +2,23 @@
 // This is where your layout of the project will go
 // ========================================
 
+body {
+  background-color: $white;
+  font-family: 'Acumin Pro';
+  color: $darkgrey;
+}
+
 .header {
+
+  &__logo {
+
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+  }
 
 }
 
