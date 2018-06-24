@@ -6,24 +6,50 @@ body {
   background-color: $white;
   font-family: 'Acumin Pro';
   color: $darkgrey;
+  width: 100%;
+}
+
+.grid-layout {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
 }
 
 .header {
+  grid-area: header;
 
   &__logo {
-
+    width: 20%;
+    padding: $spacer-s;
   }
 
-  &__navigation {
-    display: flex;
+  &__nav {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
     justify-content: center;
-    margin-left: 50px;
-  }
+    flex-wrap: wrap;
 
+    &__nav__list {
+      list-style-type: none;
+
+      &__nav__list__item {
+        // display: inline-flex;
+        // flex-direction: row;
+        // justify-content: space-around;
+        // flex-wrap: wrap;
+      }
+    }
+  }
 }
 
 .main {
   padding: $spacer-m;
+  grid-area: main;
+  background-color: $grey;
 
   &__section {
     margin: $spacer-lg $reset-0;
@@ -39,5 +65,8 @@ body {
 }
 
 .footer {
-
+  grid-area: footer;
+  background-color: $darkgrey;
+  padding: $spacer-m;
+  text-align: center;
 }
