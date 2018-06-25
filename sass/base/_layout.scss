@@ -20,25 +20,35 @@ body {
 
 .header {
   grid-area: header;
+  display: flex;
+  min-width: 320px;
+  flex-direction: row;
+  justify-content: center;
 
   &__logo {
     width: 20%;
-    padding: $spacer-s;
+    padding: $spacer-m;
   }
 
   &__nav {
     width: 100%;
     display: inline-flex;
+    padding: $spacer-s;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
+    background-color: $yellow;
 
     &__nav__list {
       list-style-type: none;
+      // flex-direction: row;
+      // justify-content: flex-end;
+      // flex-wrap: wrap;
 
       &__nav__list__item {
-        // display: inline-flex;
-        // flex-direction: row;
+        text-decoration: none;
+        display: inline-flex;
+
         // justify-content: space-around;
         // flex-wrap: wrap;
       }
@@ -49,13 +59,12 @@ body {
 .main {
   padding: $spacer-m;
   grid-area: main;
-  background-color: $grey;
 
   &__section {
     margin: $spacer-lg $reset-0;
 
     &--index {
-
+      text-align: center;
     }
   }
 }
@@ -66,6 +75,7 @@ body {
 
 .footer {
   grid-area: footer;
+  position: bottom;
   background-color: $darkgrey;
   padding: $spacer-m;
   text-align: center;

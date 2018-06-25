@@ -1,14 +1,17 @@
 // Button Component Stylesheet
 // ========================================
 .button {
-  width: 10%;
-  border-radius: 35px;
-  padding: $spacer-m;
 
   &--primary {
+    width: 125px;
+    padding: $spacer-m;
     background-color: $white;
     color: $green;
-    border: 2px solid $green;
+    border: 3px solid $green;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    margin: $spacer-s $spacer-s 0 0;
 
     &:hover {
       background-color: $green;
@@ -17,13 +20,33 @@
   }
 
   &--secondary {
+    width: 125px;
+    padding: $spacer-m;
+    background-color: $white;
+    color: $darkgrey;
+    border: 3px solid $darkgrey;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    display: inline-block;
+    margin: $spacer-s $spacer-s 0 0;
 
     &:hover {
-
+      background-color: $darkgrey;
+      color: $white;
     }
   }
 
   &--disabled {
-
+    width: 125px;
+    padding: $spacer-m;
+    background-color: $grey;
+    color: $white;
+    border: 3px solid $grey;
+    border-radius: 25px;
+    text-align: center;
+    opacity: .9;
+    display: inline-block;
+    margin: $spacer-s $spacer-s 0 0;
   }
 }

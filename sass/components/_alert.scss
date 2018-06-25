@@ -4,11 +4,11 @@
 .alert {
 
   &--error {
-    @include alert($error, $white);
+    @include alert($errorlt, $errordk);
   }
 
   &--success {
-    @include alert($success, $darkgrey);
+    @include alert($successlt, $successdk);
   }
 
   &--notification {

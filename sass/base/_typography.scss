@@ -42,20 +42,27 @@ p {
 }
 
 a {
-  @include font-type(Acumin Pro Wide, normal, 500);
-  font-size: 16px;
+  @include font-type(Acumin Pro Wide, normal, 600);
+  font-size: 14px;
   color: $darkgrey;
+  text-decoration: none;
 
   &:hover {
   color: $green;
+  text-decoration: underline;
   }
 }
 
-.small {
-  @include font-type(Acumin Pro, normal, 200);
+.small-buttons {
+  @include font-type(Acumin Pro, normal, 700);
   font-size: 14px;
 }
 
 .italic {
   font-style: italic;
+}
+
+.button {
+  @include font-type(Acumin Pro, normal, 300);
+  font-size: 12px;
 }
