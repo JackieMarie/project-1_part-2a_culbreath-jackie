@@ -54,7 +54,6 @@ body {
     &--index {
       text-align: center;
     }
-
   }
 }
 
@@ -64,6 +63,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding: $spacer-s;
 }
 
 .item-container--colors {
@@ -72,19 +72,18 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding: $spacer-s;
 }
 
 .color__list {
-  // display: inline-flex;
+  display: inline-flex;
   width: 100%;
   margin-bottom: $spacer-lg;
   margin-top: $spacer-s;
+  flex-wrap: nowrap;
 
   &__item {
     padding: $spacer-s;
-    margin-right: $spacer-s;
-    text-align: center;
-    background-color: red;
 
     &__card {
       width: 100px;
@@ -93,6 +92,7 @@ body {
       border: 1px solid $grey;
       margin-bottom: $spacer-s;
       display: inline-flex;
+      padding: $spacer-s;
     }
   }
 }
@@ -100,9 +100,33 @@ body {
 .footer {
   position: fixed;
   bottom: 0;
-  margin-top: 10px;
+  margin-top: $spacer-m;
   width: 100%;
   background-color: $darkgrey;
-  padding: $spacer-m;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+
+  &__nav {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: $spacer-s;
+    text-align: center;
+    // flex-wrap: wrap;
+    // background-color: $yellow;
+
+    &__list {
+      list-style-type: none;
+
+      &__item {
+        text-decoration: none;
+        display: inline-flex;
+        padding: $spacer-s;
+      }
+    }
+  }
 }

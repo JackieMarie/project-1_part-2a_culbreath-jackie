@@ -22,4 +22,4 @@ Recorded Help Session for Project1-Part2:
  - [Week 6 - After Class Recording for Project Assistance](https://ufl.zoom.us/recording/play/JMaHSx3YDJUvkM1iWESgTrLdG2nFf-mFUa8sxelknd7U3FX0L2TitV64nPDvxAId?autoplay=true&startTime=1529454479000)
 
 ## Comments
-Had some issues in getting flexbox to work, and to flow correctly in some areas. Also, had to clone the project more than once due to technical issues. Created a part-2a and that seemed to correct the issue. Was not clear on how to show Form Element basic text input in an error state.
+Had some issues in getting flexbox to work, and to flow correctly in some areas. Due to technical issues, I had to clone the project more than once due to technical issues. Created a part-2a and that seemed to correct the issue. I wasn't sure how you wanted us to show Form Element basic text input in an error state. Not sure the best way to format links if the background is different (placing navigation in the footer). I assume a mixin would be the way to do that?
