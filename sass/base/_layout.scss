@@ -6,38 +6,40 @@ body {
   background-color: $white;
   font-family: 'Acumin Pro';
   color: $darkgrey;
+  min-width: 320px;
 }
 
 .header {
-  // grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: $spacer-s;
+  flex-flow: wrap;
+  background-color: $yellow;
 
   &__logo {
-    width: 20%;
-    padding: $spacer-m;
+    width: 30%;
+    padding-bottom: $spacer-m;
   }
 
   &__nav {
     display: inline-flex;
-    min-width: 320px;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     padding: $spacer-s;
-    flex-flow: wrap;
-    background-color: $yellow;
+    text-align: center;
+    // flex-wrap: wrap;
+    // background-color: $yellow;
 
-    &__nav__list {
+    &__list {
       list-style-type: none;
-      // flex-direction: row;
-      // justify-content: flex-end;
-      // flex-wrap: wrap;
 
-      &__nav__list__item {
+      &__item {
         text-decoration: none;
         display: inline-flex;
-
-        // justify-content: space-around;
-        // flex-wrap: wrap;
+        padding: $spacer-s;
       }
     }
   }
@@ -52,15 +54,47 @@ body {
     &--index {
       text-align: center;
     }
+
   }
 }
 
 .item-container {
-    margin: $spacer-m $reset-0;
-    display: inline-flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: center;
+  margin: $spacer-m $reset-0;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-container--colors {
+  margin: $spacer-m $reset-0;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.color__list {
+  // display: inline-flex;
+  width: 100%;
+  margin-bottom: $spacer-lg;
+  margin-top: $spacer-s;
+
+  &__item {
+    padding: $spacer-s;
+    margin-right: $spacer-s;
+    text-align: center;
+    background-color: red;
+
+    &__card {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      border: 1px solid $grey;
+      margin-bottom: $spacer-s;
+      display: inline-flex;
+    }
+  }
 }
 
 .footer {

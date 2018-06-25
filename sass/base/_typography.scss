@@ -22,13 +22,14 @@ h3 {
   @include font-type(Acumin Pro, normal, 500);
   font-size: 36px;
   padding: $spacer-s;
-  margin-bottom: 5px;
+  margin-bottom: $spacer-xs;
 }
 
 h4 {
   @include font-type(Acumin Pro, normal, 500);
   font-size: 24px;
   padding: $spacer-s;
+  margin-bottom: $spacer-xs;
 }
 
 h5 {
