@@ -29,17 +29,17 @@
           <h3>Alerts</h3>
           <div class="item-container">
             <div class="alert--error small">
-              <p>Oops! Something went wrong. Try again.</p>
+              <p>Oops, something went wrong! Please try again.</p>
             </div>
           </div>
           <div class="item-container">
             <div class="alert--success small">
-              <p>You did it! Job well done!</p>
+              <p>You did it! That was a successful transaction!</p>
             </div>
           </div>
           <div class="item-container">
             <div class="alert--notification small">
-              <p>You have been notified!</p>
+              <p>Notification alert! You have been notified!</p>
             </div>
           </div>
         </section>
@@ -50,9 +50,13 @@
             <div class="button--primary">
               <p class="small-buttons">PRIMARY</P>
             </div>
+          </div>
+          <div class="item-container">
             <div class="button--secondary">
               <p class="small-buttons">SECONDARY</P>
             </div>
+          </div>
+          <div class="item-container">
             <div class="button--disabled">
               <p class="small-buttons">DISABLED</P>
             </div>
@@ -94,7 +98,27 @@
         <section class="main__section">
           <h3>Form Elements</h3>
           <div class="item-container">
-            <!-- Make sure you include a basic text input - with or without a label, a basic text input with an error and a basic select box - with or without a label -->
+            <fieldset>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Name*" required />
+            </fieldset>
+          </div>
+          <div class="item-container">
+            <fieldset>
+              <label for="email">Error State</label>
+              <input type="email" id="email" name="email" placeholder="Please fill out this field*" required />
+            </fieldset>
+          </div>
+          <div class="item-container">
+            <fieldset>
+              <label for="select">Select Contact Preference</label>
+              <select name="contactmethod" id="contactmethod">
+								<option selected>Contact Preference?</option>
+									<option value="phone">Phone</option>
+									<option value="email">Email</option>
+									<option value="no_preference">No Preference</option>
+							</select>
+            </fieldset>
           </div>
         </section>
 
@@ -114,7 +138,7 @@
           </li>
         </ul>
       </nav> -->
-      <p class="text--white small">This is the footer</p>
+      <p class="small-font text--white">This is the footer</p>
     </footer>
   </body>
 </html>
