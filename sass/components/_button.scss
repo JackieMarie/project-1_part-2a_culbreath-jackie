@@ -3,14 +3,17 @@
 .button {
 
   &--primary {
-    width: 125px;
-    padding: $spacer-m;
-    background-color: $white;
-    color: $green;
-    border: 3px solid $green;
-    border-radius: 25px;
-    text-align: center;
-    margin-right: $spacer-s;
+    // @include button-format($white, $green, $green);
+      margin-right: $spacer-s;
+      background-color: $white;
+      color: $green;
+      border-color: $green;
+      font-family: $primary-font;
+      width: 125px;
+      padding: $spacer-m;
+      border: 3px solid;
+      border-radius: 25px;
+      text-align: center;
 
     &:hover {
       background-color: $green;
@@ -19,14 +22,17 @@
   }
 
   &--secondary {
-    width: 125px;
-    padding: $spacer-m;
-    background-color: $white;
-    color: $darkgrey;
-    border: 3px solid $darkgrey;
-    border-radius: 25px;
-    text-align: center;
-    margin-right: $spacer-s;
+    // @include button-format($white, $darkgrey, $darkgrey);
+      margin-right: $spacer-s;
+      background-color: $white;
+      color: $darkgrey;
+      border-color: $darkgrey;
+      font-family: $primary-font;
+      width: 125px;
+      padding: $spacer-m;
+      border: 3px solid;
+      border-radius: 25px;
+      text-align: center;
 
     &:hover {
       background-color: $darkgrey;
@@ -35,13 +41,15 @@
   }
 
   &--disabled {
-    width: 125px;
-    padding: $spacer-m;
+    // @include button-format($grey, $white, $grey);
+    opacity: .9;
     background-color: $grey;
     color: $white;
+    font-family: $primary-font;
+    width: 125px;
+    padding: $spacer-m;
     border: 3px solid $grey;
     border-radius: 25px;
     text-align: center;
-    opacity: .9;
   }
 }
